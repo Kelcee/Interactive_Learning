@@ -2,9 +2,13 @@
 
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-      <script src="jquery-1.6.2.min.js"></script>
+  <script src="Scripts/jquery-3.4.1.min.js"></script>
+  <script src="Scripts/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+  <link href="Scripts/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" />
   <script>
       $(document).ready(function () {
+
+          $("#tabs").tabs();
 
           // Prevent the web browser from caching AJAX responses
           // Otherwise, clicking for the server time only makes the call the first time you click
@@ -115,8 +119,13 @@
         
     </div>
 
-    <div class="row">
-        <div class="col-md-4">
+    <div id="tabs" class="row"> <%--setting up id for tab--%>
+        <ul>
+            <li><a href="#colorTab">Learn Colors</a></li>
+            <li><a href="#numberTab">Learn Numbers</a></li>
+            <li><a href="#animalTab">Learn Animals</a></li>
+        </ul>
+        <div id="colorTab" class="col-md-4"> <%--assigning id to div--%>
             <h2>Learn Colors!</h2>
             <p>Click on a color to learn the word!</p>
             <p>
@@ -126,7 +135,7 @@
                 <img id="greenC" src="./Images/Pgreen.png"style="width:259px; height: 194px;"  />             
             </p>
         </div>
-        <div class="col-md-4">
+        <div id="numberTab" class="col-md-4">
             <h2>Learn Numbers!</h2>
             <p>Count the balloons!</p>
             <p>
@@ -137,7 +146,7 @@
             </p>
 
         </div>
-        <div class="col-md-4">
+        <div id="animalTab" class="col-md-4">
             <h2>Learn Animals!</h2>
             <p>
                 Guess the animal! click to see the answer!
