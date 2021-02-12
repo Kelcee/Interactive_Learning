@@ -44,47 +44,96 @@
               }); // End #btnAJAXGet.ajax
           }); // End #btnAJAXGet.click
 
+          //colors .hover using ajax
           $("#yellowC").hover(
               function () { $(this).attr('src', './Images/Wyellow.jpg'); },
               function () { $(this).attr('src', './Images/Pyellow.png'); }
-          ); // End .hover
+          ); 
+
+          $("#redC").hover(
+              function () { $(this).attr('src', './Images/Wred.jpg'); },
+              function () { $(this).attr('src', './Images/Pred.jpg'); }
+          ); 
+
+          $("#blueC").hover(
+              function () { $(this).attr('src', './Images/Wblue.jpg'); },
+              function () { $(this).attr('src', './Images/Pblue.png'); }
+          ); 
+
+          $("#greenC").hover(
+              function () { $(this).attr('src', './Images/Wgreen.jpg'); },
+              function () { $(this).attr('src', './Images/Pgreen.png'); }
+          ); 
+
+          //numbers .hover
+          $("#one").hover(
+              function () { $(this).attr('src', './Images/N1.png'); },
+              function () { $(this).attr('src', './Images/Pone.png');}
+          );
+
+          $("#two").hover(
+              function () { $(this).attr('src', './Images/N2.png'); },
+              function () { $(this).attr('src', './Images/Ptwo.png'); }
+          );
+
+          $("#three").hover(
+              function () { $(this).attr('src', './Images/N3.jpg'); },
+              function () { $(this).attr('src', './Images/Pthree.jpg'); }
+          );
+
+          $("#four").hover(
+              function () { $(this).attr('src', './Images/N4.png'); },
+              function () { $(this).attr('src', './Images/Pfour.png'); }
+          );
+
+          //animals .hover
+          $("#dog").hover(
+              function () { $(this).attr('src', './Images/Wdog.jpg'); },
+              function () { $(this).attr('src', './Images/Pdog.jpg'); }
+          );
+
+          $("#cat").hover(
+              function () { $(this).attr('src', './Images/Wcat.png'); },
+              function () { $(this).attr('src', './Images/Pcat.jpg'); }
+          );
+
+          $("#bear").hover(
+              function () { $(this).attr('src', './Images/Wbear.png'); },
+              function () { $(this).attr('src', './Images/Pbear.jpg'); }
+          );
+
+          $("#mouse").hover(
+              function () { $(this).attr('src', './Images/Wmouse.jpg'); },
+              function () { $(this).attr('src', './Images/Pmouse.png'); }
+          );
 
       }); // End document.ready
   </script>
     <div class="jumbotron">
         <h1>Learning is fun!</h1>
-        <p>Click on a photo below to learn the word!</p>
+        <p>Hover your mouse over a photo below to learn the word!</p>
         
     </div>
 
     <div class="row">
         <div class="col-md-4">
             <h2>Learn Colors!</h2>
+            <p>Click on a color to learn the word!</p>
             <p>
-                Click on a color to learn the word!
                 <img id="yellowC" src="./Images/Pyellow.png" style="width:259px; height: 194px;" />
-                <img src="Pblue.png" />
-                <img src="Wblue.jpg" />
-                <img src="Pred.jpg" />
-                <img src="Wred.jpg" />
-                <img src="Pgreen.png" />
-                <img src="Wgreen.jpg" />
-               
+                <img id="blueC"src="./Images/Pblue.png"style="width:259px; height: 194px;"  />
+                <img id="redC" src="./Images/Pred.jpg"style="width:259px; height: 194px;"  />
+                <img id="greenC" src="./Images/Pgreen.png"style="width:259px; height: 194px;"  />             
             </p>
         </div>
         <div class="col-md-4">
             <h2>Learn Numbers!</h2>
+            <p>Count the balloons!</p>
             <p>
-                count the balloons! click on the balloons after you count to see the answer!
-                <img src="Pone.png" />
-                <img src="N1.png" />
-                <img src="Ptwo.png" />
-                <img src="N2.png" />
-                <img src="Pthree.png" />
-                <img src="N3.png" />
-                <img src="Pfour.png" />
-                <img src="N4.png" />
-                
+                <img id="one" src="./Images/Pone.png" style="width:225px; height: 194px;" />
+                <img id="two" src="./Images/Ptwo.png" style="width:225px; height: 194px;"/>
+                <img id="three" src="./Images/Pthree.jpg" style="width:225px; height: 194px;" />
+                <img id="four" src="./Images/Pfour.png" style="width:225px; height: 194px;" />    
             </p>
 
         </div>
@@ -92,14 +141,10 @@
             <h2>Learn Animals!</h2>
             <p>
                 Guess the animal! click to see the answer!
-                <img src="Pbear.jpg" />
-                <img src="Wbear.png" />
-                <img src="Pcat.jpg" />
-                <img src="Wcat.png" />
-                <img src="Pdog.jpg" />
-                <img src="Wdog.jpg" />
-                <img src="Pmouse.png" />
-                <img src="Wmouse.jpg" />
+                <img id="bear" src="./Images/Pbear.jpg" style="width:262px; height: 192px;" />
+                <img id="cat" src="./Images/Pcat.jpg" style="width:201px; height: 251px;"/>
+                <img id="dog" src="./Images/Pdog.jpg" style="width:299px; height: 168px;"/>
+                <img id="mouse" src="./Images/Pmouse.png" style="width:226px; height: 223px;"/>
             </p>
         </div>
     </div>
