@@ -13,8 +13,6 @@
 
           $("#tabs").tabs({
               activate: function (event, ui) {
-                  console.log(ui.newTab[0].innerText);
-
                   var sendData = { "tabText": ui.newTab[0].innerText };
 
                   $.ajax({
@@ -24,7 +22,10 @@
                       contentType: "application/json", // You MUST specify contentType for WebMethods
                       dataType: "json",
                       success: function (response) {
-                          console.log(response);
+                          var jumbotronText = JSON.parse(response.d);
+
+                          $("#JumbotronTitle").text(jumbotronText.LearningTitle);
+                          $("#JumbotronDescription").text(jumbotronText.Description);
                       } // End success function
                   }); // End 
               } 
@@ -34,27 +35,27 @@
           // Otherwise, clicking for the server time only makes the call the first time you click
           $.ajaxSetup({ cache: false });
 
-          $("#btnAJAXLoad").click(function () {
-              $("#divAJAXLoad").load("HogwartsSchoolSong.html");
-          }); // End btnAJAXLoad.click()
+          //$("#btnAJAXLoad").click(function () {
+          //    $("#divAJAXLoad").load("HogwartsSchoolSong.html");
+          //}); // End btnAJAXLoad.click()
 
 
           
 
-          $('#btnAJAXGet').click(function () {
-              sendData = "{ \"userName\": \"" + $("#userName").val() + "\"}"
-              $.ajax({
-                  type: "POST",
-                  url: "GetReply.aspx/Login",
-                  data: sendData,
-                  contentType: "application/json",
-                  dataType: "json",
-                  success: function (msg) {
-                      // Replace the div's content with the page method's return.
-                      $("#lblLoginResult").text(msg.d);
-                  } // End success function
-              }); // End #btnAJAXGet.ajax
-          }); // End #btnAJAXGet.click
+          //$('#btnAJAXGet').click(function () {
+          //    sendData = "{ \"userName\": \"" + $("#userName").val() + "\"}"
+          //    $.ajax({
+          //        type: "POST",
+          //        url: "GetReply.aspx/Login",
+          //        data: sendData,
+          //        contentType: "application/json",
+          //        dataType: "json",
+          //        success: function (msg) {
+          //            // Replace the div's content with the page method's return.
+          //            $("#lblLoginResult").text(msg.d);
+          //        } // End success function
+          //    }); // End #btnAJAXGet.ajax
+          //}); // End #btnAJAXGet.click
 
           //colors .hover using jquery event handlders
           $("#yellowC").hover(
@@ -122,9 +123,8 @@
       }); // End document.ready
   </script>
     <div class="jumbotron bannerbackground">
-        <h1>Learning is fun!</h1>
-        <p>Hover your mouse over a photo below to learn the word!</p>
-        
+        <h1 id="JumbotronTitle">Learning is fun!</h1>
+        <p id="JumbotronDescription">Hover your mouse over a photo below to learn the word!</p>
     </div>
 
     <div id="tabs" class="row"> <%--setting up id for tab--%>
