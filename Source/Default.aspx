@@ -48,7 +48,7 @@
               }); // End #btnAJAXGet.ajax
           }); // End #btnAJAXGet.click
 
-          //colors .hover using ajax
+          //colors .hover using jquery event handlders
           $("#yellowC").hover(
               function () { $(this).attr('src', './Images/Wyellow.jpg'); },
               function () { $(this).attr('src', './Images/Pyellow.png'); }
@@ -128,33 +128,33 @@
         <div id="colorTab" class="col-md-4"> <%--assigning id to div--%>
             <h2>Learn Colors!</h2>
             <p>Click on a color to learn the word!</p>
-            <p>
-                <img id="yellowC" src="./Images/Pyellow.png" style="width:259px; height: 194px;" />
-                <img id="blueC"src="./Images/Pblue.png"style="width:259px; height: 194px;"  />
-                <img id="redC" src="./Images/Pred.jpg"style="width:259px; height: 194px;"  />
-                <img id="greenC" src="./Images/Pgreen.png"style="width:259px; height: 194px;"  />             
-            </p>
+            <div style="display: inline-flex;">
+                <div><img id="yellowC" src="./Images/Pyellow.png" class="image-size" /></div>
+                <div><img id="blueC"src="./Images/Pblue.png" class="image-size"  /></div>
+                <div><img id="redC" src="./Images/Pred.jpg" class="image-size"  /></div>
+                <div><img id="greenC" src="./Images/Pgreen.png" class="image-size"  /></div>             
+            </div>
         </div>
         <div id="numberTab" class="col-md-4">
             <h2>Learn Numbers!</h2>
             <p>Count the balloons!</p>
-            <p>
-                <img id="one" src="./Images/Pone.png" style="width:225px; height: 194px;" />
-                <img id="two" src="./Images/Ptwo.png" style="width:225px; height: 194px;"/>
-                <img id="three" src="./Images/Pthree.jpg" style="width:225px; height: 194px;" />
-                <img id="four" src="./Images/Pfour.png" style="width:225px; height: 194px;" />    
-            </p>
+            <div style="display: inline-flex;">
+                <div><img id="one" src="./Images/Pone.png" class="image-size" /></div>
+                <div><img id="two" src="./Images/Ptwo.png" class="image-size"/></div>
+                <div><img id="three" src="./Images/Pthree.jpg" class="image-size" /></div>
+                <div><img id="four" src="./Images/Pfour.png" class="image-size" /></div> 
+            </div>
 
         </div>
         <div id="animalTab" class="col-md-4">
             <h2>Learn Animals!</h2>
-            <p>
-                Guess the animal! click to see the answer!
-                <img id="bear" src="./Images/Pbear.jpg" style="width:262px; height: 192px;" />
-                <img id="cat" src="./Images/Pcat.jpg" style="width:201px; height: 251px;"/>
-                <img id="dog" src="./Images/Pdog.jpg" style="width:299px; height: 168px;"/>
-                <img id="mouse" src="./Images/Pmouse.png" style="width:226px; height: 223px;"/>
-            </p>
+            <p>Guess the animal! click to see the answer!</p>
+            <div style="display: inline-flex;">
+                <div><img id="bear" src="./Images/Pbear.jpg" class="image-size" /></div>
+                <div><img id="cat" src="./Images/Pcat.jpg" class="image-size"/></div>
+                <div><img id="dog" src="./Images/Pdog.jpg" class="image-size"/></div>
+                <div><img id="mouse" src="./Images/Pmouse.png" class="image-size"/></div>
+            </div>
         </div>
     </div>
 </asp:Content>
