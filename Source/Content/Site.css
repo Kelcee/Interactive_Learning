@@ -34,3 +34,10 @@ textarea {
     width: 250px;
     height: 150px;
 }
+.bannerbackground {
+    background-image: url("../Images/colorpencils.jpg");
+    background-size: contain;
+    color: firebrick;
+    text-align: center;
+    font-family: cursive;
+}

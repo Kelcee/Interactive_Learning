@@ -116,7 +116,7 @@
 
       }); // End document.ready
   </script>
-    <div class="jumbotron">
+    <div class="jumbotron bannerbackground">
         <h1>Learning is fun!</h1>
         <p>Hover your mouse over a photo below to learn the word!</p>
         
