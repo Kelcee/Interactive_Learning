@@ -126,7 +126,7 @@
                   $(this).stop().animate(
                       {
                           left: '0',
-                          backgroundColor: 'rgb(27,45,94)'
+                          backgroundColor: 'rgba(27,45,94,0.8)'
                       },
                       500,
                       'easeInSine'
@@ -138,7 +138,7 @@
                   $(this).stop().animate( 
                       {
                           left: '-317px',
-                          backgroundColor: 'rgb(255,211,224)'
+                          backgroundColor: 'rgba(183, 0, 110, 0.8)'
                       },
                       1500,
                       'easeOutBounce'
@@ -154,11 +154,11 @@
   </script>
 
     <div id="dashboard">
-         <div class="dashlink"><span class="badge bg-secondary">New</span>&nbsp;&nbsp;<a href="https://www.codemonkey.com" target ="_blank">Click for Coding For Kids!</a></div>
-         <div class="dashlink"><span class="badge bg-secondary">New</span>&nbsp;&nbsp;<a href="https://www.education.com/worksheets/" target="_blank">Click for Educational Print Outs!</a></div>
-         <div class="dashlink"><span class="badge bg-secondary">New</span>&nbsp;&nbsp;<a href="https://www.mensaforkids.org/achieve/excellence-in-reading/" target="_blank">Learn about MENSA Kids Reading List!</a></div>
-         <div class="dashlink"><span class="badge bg-secondary">New</span>&nbsp;&nbsp;<a href="https://www.lakeshorelearning.com/products/stem/N/538022790/" target="_blank">Top Learning Toys!</a></div>
-    </div>
+         <div class="dashlink"><span class="badge badge-code">New</span>&nbsp;&nbsp;<a class="popouttext" href="https://www.codemonkey.com" target ="_blank">Click for Coding For Kids!</a></div>
+         <div class="dashlink"><span class="badge badge-print">New</span>&nbsp;&nbsp;<a class="popouttext" href="https://www.education.com/worksheets/" target="_blank">Click for Educational Print Outs!</a></div>
+         <div class="dashlink"><span class="badge badge-mensa">New</span>&nbsp;&nbsp;<a class="popouttext" href="https://www.mensaforkids.org/achieve/excellence-in-reading/" target="_blank">Learn about MENSA Kids Reading List!</a></div>
+         <div class="dashlink"><span class="badge badge-toys">New</span>&nbsp;&nbsp;<a class="popouttext" href="https://www.lakeshorelearning.com/products/stem/N/538022790/" target="_blank">Top Learning Toys!</a></div>
+    </div>                                                                               
 
 
     <div class="jumbotron bannerbackground">

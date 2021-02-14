@@ -2,6 +2,10 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image:url("../Images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100%;
 }
 
 /* Wrapping element */
@@ -43,20 +47,46 @@ textarea {
 }
 #dashboard {
     width: 335px;
-    background-color: rgb(255,211,224);
-    padding: 20px 20px 0 20px;
+    background-color: rgba(183, 0, 110, 0.8);
+    padding: 20px 20px 20px 20px;
     position: absolute;
     left: -317px;
     z-index: 100;
     top: 150px;
     display: block;
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
 }
 
     #dashboard img {
         margin-bottom: 20px;
         border: 1px solid rgb(0,0,0);
     }
-  
-.dashlink{
-    width:auto;
+
+.dashlink {
+    width: auto;
+    padding-bottom: 5px;
+}
+.popouttext{
+    color:yellowgreen;
+}
+.popouttext:hover{
+    color:yellow;
+}
+
+.badge-code {
+    color: navy;
+    background-color: lawngreen;
+}
+.badge-print {
+    color: navy;
+    background-color: lightpink;
+}
+.badge-mensa{
+    color: navy;
+    background-color: aqua;
+}
+.badge-toys{
+    color:navy;
+    background-color:orange;
 }
