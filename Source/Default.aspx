@@ -120,8 +120,49 @@
               function () { $(this).attr('src', './Images/Pmouse.png'); }
           );
 
+          $('#dashboard').hover(
+              function () {
+
+                  $(this).stop().animate(
+                      {
+                          left: '0',
+                          backgroundColor: 'rgb(27,45,94)'
+                      },
+                      500,
+                      'easeInSine'
+                  );//end animate
+
+              },
+
+              function () {
+                  $(this).stop().animate(
+                      {
+                          left: '-92px',
+                          backgroundColor: 'rgb(255,211,224)'
+                      },
+                      1500,
+                      'easeOutBounce'
+
+
+                  );//end animate
+
+              }
+
+          ); //end hover
+
       }); // End document.ready
   </script>
+
+    <div id="dashboard">
+        <img src="../_images/small/blue_h.jpg" width="70" height="70" alt="blue">
+        <img src="../_images/small/green_h.jpg" width="70" height="70" alt="green">
+        <img src="../_images/small/orange_h.jpg" width="70" height="70" alt="orange">
+        <img src="../_images/small/purple_h.jpg" width="70" height="70" alt="purple">
+        <img src="../_images/small/red_h.jpg" width="70" height="70" alt="red">
+        <img src="../_images/small/yellow_h.jpg" width="70" height="70" alt="yellow">
+    </div>
+
+
     <div class="jumbotron bannerbackground">
         <h1 id="JumbotronTitle">Learning is fun!</h1>
         <p id="JumbotronDescription">Hover your mouse over a photo below to learn the word!</p>
