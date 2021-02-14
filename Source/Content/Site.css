@@ -42,16 +42,21 @@ textarea {
     font-family: cursive;
 }
 #dashboard {
-    width: 110px;
+    width: 335px;
     background-color: rgb(255,211,224);
     padding: 20px 20px 0 20px;
     position: absolute;
-    left: -92px;
+    left: -317px;
     z-index: 100;
     top: 150px;
+    display: block;
 }
 
     #dashboard img {
         margin-bottom: 20px;
         border: 1px solid rgb(0,0,0);
     }
+  
+.dashlink{
+    width:auto;
+}

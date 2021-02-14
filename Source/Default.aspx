@@ -121,7 +121,7 @@
           );
 
           $('#dashboard').hover(
-              function () {
+              function () { //event handler in
 
                   $(this).stop().animate(
                       {
@@ -134,10 +134,10 @@
 
               },
 
-              function () {
-                  $(this).stop().animate(
+              function () { //event handler out
+                  $(this).stop().animate( 
                       {
-                          left: '-92px',
+                          left: '-317px',
                           backgroundColor: 'rgb(255,211,224)'
                       },
                       1500,
@@ -154,12 +154,10 @@
   </script>
 
     <div id="dashboard">
-        <img src="../_images/small/blue_h.jpg" width="70" height="70" alt="blue">
-        <img src="../_images/small/green_h.jpg" width="70" height="70" alt="green">
-        <img src="../_images/small/orange_h.jpg" width="70" height="70" alt="orange">
-        <img src="../_images/small/purple_h.jpg" width="70" height="70" alt="purple">
-        <img src="../_images/small/red_h.jpg" width="70" height="70" alt="red">
-        <img src="../_images/small/yellow_h.jpg" width="70" height="70" alt="yellow">
+         <div class="dashlink"><span class="badge bg-secondary">New</span>&nbsp;&nbsp;<a href="https://www.codemonkey.com" target ="_blank">Click for Coding For Kids!</a></div>
+         <div class="dashlink"><span class="badge bg-secondary">New</span>&nbsp;&nbsp;<a href="https://www.education.com/worksheets/" target="_blank">Click for Educational Print Outs!</a></div>
+         <div class="dashlink"><span class="badge bg-secondary">New</span>&nbsp;&nbsp;<a href="https://www.mensaforkids.org/achieve/excellence-in-reading/" target="_blank">Learn about MENSA Kids Reading List!</a></div>
+         <div class="dashlink"><span class="badge bg-secondary">New</span>&nbsp;&nbsp;<a href="https://www.lakeshorelearning.com/products/stem/N/538022790/" target="_blank">Top Learning Toys!</a></div>
     </div>
 
 
