@@ -73,6 +73,9 @@ textarea {
 .popouttext:hover{
     color:yellow;
 }
+.popouttext:visited{
+    color: aqua;
+}
 
 .badge-code {
     color: navy;

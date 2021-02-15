@@ -43,6 +43,7 @@ namespace Interactive_Learning
             }
             return JsonConvert.SerializeObject(jumbotronText);
         }
+
         public class JumbotronText
         {
             public string LearningTitle { get; set; }
