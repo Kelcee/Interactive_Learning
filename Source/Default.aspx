@@ -173,6 +173,7 @@
             <li><a href="#colorTab">Learn Colors</a></li>
             <li><a href="#numberTab">Learn Numbers</a></li>
             <li><a href="#animalTab">Learn Animals</a></li>
+            <li><a href="#artTab">Learn Art</a></li>
         </ul>
         <div id="colorTab" class="col-md-4"> <%--assigning id to div--%>
             <h2>Learn Colors!</h2>
@@ -204,6 +205,13 @@
                 <div><img id="dog" src="./Images/Pdog.jpg" class="image-size" /></div>
                 <div><img id="mouse" src="./Images/Pmouse.png" class="image-size" /></div>
             </div>
+        </div>
+        <div id="artTab" class="col-md-4">
+            <h2>Learn Art!</h2>
+            <iframe width="518" height="340" src="https://www.youtube.com/embed/1CJdkyqTQN4" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
         </div>
     </div>
 </asp:Content>

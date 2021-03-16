@@ -38,6 +38,11 @@ namespace Interactive_Learning
                     jumbotronText.Description = "Guess the animal and click to see the name of the animal!";
                     break;
 
+                case "Learn Art":
+                    jumbotronText.LearningTitle = "Learn all about art work!";
+                    jumbotronText.Description = "An interactive section to learn and play with art.";
+                    break;
+
                 default:
                     throw new Exception("Unknown tab.");
             }
